@@ -44,5 +44,4 @@ jobs:
         uses: softprops/action-gh-release@v1
         if: startsWith('latest', 'refs/tags/')
         with:
-          files: |
-            build/libs/*.jar
+          files: build/libs/*.jar
