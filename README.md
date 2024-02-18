@@ -1,6 +1,6 @@
 # NaturalDecay
 
-My first plugin. For 1.20.4.
+My first Paper/Spigot/Bukkit plugin. For 1.20.4. Made on 2/17-2/18.
 
 Blocks randomly start getting destroyed around the player (replaced with air).
 If a player places a block, it is safe and will not be destroyed.
