@@ -27,7 +27,6 @@ public class NaturalDecay extends JavaPlugin implements Listener {
         Material.MOVING_PISTON.toString(),
         Material.PISTON_HEAD.toString(),
         Material.STICKY_PISTON.toString(),
-
         Material.WHITE_BED.toString(),
         Material.LIGHT_GRAY_BED.toString(),
         Material.GRAY_BED.toString(),
@@ -44,7 +43,6 @@ public class NaturalDecay extends JavaPlugin implements Listener {
         Material.BLUE_BED.toString(),
         Material.PURPLE_BED.toString(),
         Material.PINK_BED.toString(),
-
         Material.CHEST.toString(),
         Material.TRAPPED_CHEST.toString(),
         Material.DRAGON_EGG.toString(),
