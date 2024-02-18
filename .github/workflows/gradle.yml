@@ -40,11 +40,9 @@ jobs:
     - name: Build with Gradle Wrapper
       run: ./gradlew build
 
-    - uses: "marvinpinto/action-automatic-releases@latest"
-      with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: "latest"
-          prerelease: true
-          title: "Development Build"
+    - name: Release
+        uses: softprops/action-gh-release@v1
+        if: startsWith('latest', 'refs/tags/')
+        with:
           files: |
             build/libs/*.jar
