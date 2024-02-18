@@ -41,11 +41,9 @@ jobs:
       run: ./gradlew build
 
     - name: Release
-      uses: CupOfTea696/gh-action-auto-release@v1.0.0
+      uses: "marvinpinto/action-automatic-releases@latest"
       with:
-          title: "Release: $version"
-          tag: "v$semver"
-          draft: false
-          regex: "/^Release: #{semver}$/i"
-      env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          title: "Release"
+          files: build/libs/*.jar
