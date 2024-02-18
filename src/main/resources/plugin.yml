@@ -1,0 +1,20 @@
+main: cc.spea.naturaldecay.NaturalDecay
+name: NaturalDecay
+version: '1.0'
+api-version: '1.20'
+description: Natural Decay
+load: POSTWORLD
+author: R2bEEaton
+website: spea.cc
+prefix: NaturalDecay
+commands:
+  nd:
+    description: Natural Decay Command
+    aliases:
+      - naturaldecay
+    permission: naturaldecay.nd
+    permission-message: You do not have permission!
+permissions:
+  naturaldecay.nd:
+    description: Allows start command
+    default: op
